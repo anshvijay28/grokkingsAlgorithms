@@ -1,0 +1,14 @@
+(current node = start node)
+Let the distance from the start node be 0 (in the known distances table)
+Let known distances to all other nodes be infinity 
+
+Calculate distance of neighbors to start node 
+if calculated distance is less than known distance:
+    update distance value in the table:
+        distance would be distance from current node to this neighbor plus distance from current node to starting node
+    say previous node of this node is the current node 
+
+add current node to list of visited nodes and take it out of list of unvisited nodes
+update current node to be the node with the shortest known distance from current node 
+
+repeat this process until all nodes are visited 
